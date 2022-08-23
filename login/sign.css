@@ -1,0 +1,171 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,500&family=Ubuntu:ital,wght@1,300&family=Varela&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  font-family: "Ubuntu", sans-serif;
+  font-family: "Varela", sans-serif;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(95, 95, 95, 0.39);
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.modalForm {
+  width: 400px;
+  min-height: 100vh;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.actionBtns {
+  width: 80%;
+  background-color: rgb(30, 215, 96);
+  margin: 2em;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  border-radius: 30px;
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+}
+.actionBtn {
+  padding: 1em;
+  width: 50%;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  border-radius: 50px;
+  color: whitesmoke;
+  font-size: 0.8em;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.moveBtn {
+  position: absolute;
+  width: 50%;
+  height: 90%;
+  margin: 2px;
+  border: none;
+  outline: none;
+  border-radius: 50px;
+  background-color: white;
+  font-size: 0.8em;
+  font-weight: 600;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  transform: translateX(0);
+  transition: all 0.3s ease-in-out;
+}
+
+.rightBtn {
+  transform: translateX(98%);
+  transition: all 0.3s ease-in-out;
+}
+.inputGroup {
+  width: 300px;
+  margin: 0.8em 0;
+  background-color: rgb(255, 245, 245);
+  border-radius: 30px;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px;
+  font-weight: 600;
+}
+.inputGroup input {
+  width: 100%;
+  padding: 1em 1.5em;
+  background-color: transparent;
+  border: none;
+  border-radius: 30px;
+}
+.inputGroup input:focus {
+  outline: none;
+}
+.submitBtn {
+  width: 150px;
+  padding: 1em;
+  margin: 1em 0;
+  border-radius: 50px;
+  border: none;
+  outline: none;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px;
+  cursor: pointer;
+  font-size: 0.8em;
+  font-weight: 600;
+  transition: all 0.3s ease-in-out;
+}
+.submitBtn:hover {
+  background-color: rgb(30, 215, 96);
+  color: white;
+  transition: all 0.3s ease-in-out;
+}
+.form {
+  display: none;
+}
+.signupForm {
+  display: block;
+}
+.loginForm {
+  display: block;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  background: black;
+  height: auto;
+  width: 100vw;
+  padding-top: 0.4rem;
+  color: whitesmoke;
+}
+.footerContent {
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+.footerContent h3 {
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 3rem;
+}
+.footerContent p {
+  text-transform: uppercase;
+  opacity: 0.4;
+  font-weight: 300;
+}
+
+.social {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 0 3rem 0;
+}
+.social li {
+  margin: 0 10px;
+}
+.social a {
+  text-decoration: none;
+  color: white;
+}
+.social a i {
+  font-size: 1.4rem;
+  transition: color 0.4s ease;
+}
+.social a:hover i {
+  color: palevioletred;
+}
